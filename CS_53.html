@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<!-- <link rel="stylesheet" href="C:\Users\arohi\Desktop\Developer/CS5.css"> -->
+	<style type="text/css">
+		*{
+	margin: 0px;
+	padding: 0px;
+}
+.picture{
+	width: 100%;
+	height: 100vh;
+	background-image: url('Image/sky.jpg');
+	background-size: cover;
+	position: relative;
+	overflow-x: hidden;
+}
+.container{
+	width:100%; 
+	height: auto;
+	top: 0;
+	left: 30%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+}
+
+.suns{
+	right: 0;
+	top: 50px;
+	animation: suns 20s linear infinite;
+	background-repeat: repeat-x;
+
+}
+@keyframes suns{
+	100%{
+		transform: translateX(-300px);
+	}
+}
+.picture>img{
+	width:90px;
+	height: 90px;
+	position: absolute;
+}
+
+.flag{
+	top: 342px;
+	left: 778px;
+	
+	position: absolute;
+	z-index: 2;
+}
+
+
+
+.first{
+	width: 115px;
+	height: 40px;
+	
+	font-weight: bold;
+	background: orange;
+	margin-right: 10px;
+	display: flex;
+	text-align: center;
+
+}
+
+.second{
+	width: 265px;
+	height: 40px;
+	background: white;
+	margin-right: 10px;
+	display: flex;
+	text-align: center;
+}
+.third{
+	width: 75px;
+	height: 40px;
+	background: limegreen;
+	margin-right: 10px;
+	display: flex;
+	text-align: center;
+}
+.road{
+	height: 200px;
+	width: 500%;
+	display: block;
+	background-image: url('Image/road.jpg');
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom:0 ;
+	z-index: 1;
+	background-repeat: repeat-x;
+	animation: road 5s linear infinite;
+}
+@keyframes road{
+	100%{
+		transform: translateX(-3500px);
+	}
+}
+.city{
+	width: 500%;
+	height: 250px;
+	background-image: url('Image/city.png');
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 200px;
+	display: block;
+	z-index: 1;
+	background-repeat: repeat-x;
+	animation: flow 20s linear infinite;
+}
+@keyframes flow{
+	100%{
+		transform: translateX(-2500px);
+	}
+}
+
+
+
+.car{
+	width: 400px;
+	left: 50%;
+	bottom: 100px;
+	transform: translateX(-50%);
+	
+	position: absolute;
+	z-index: 2;
+}
+.car img{
+	width: 100%;
+	animation: cars 1s linear infinite;
+}
+@keyframes cars{
+	100%{
+		transform: translateY(-1px);
+	}
+	50%{
+		transform: translateY(1px);
+	}
+	0%{
+		transform: translateY(-1px);
+	}
+}
+.wheel{
+	left: 50%;
+	bottom: 178px;
+	transform: translateX(-50%);
+	position: absolute;
+	z-index: 2;
+}
+.wheel img{
+	width: 72px;
+	height: 72px;
+	animation: wheels 1s linear infinite;
+
+}
+
+.before{
+	left: 80px;
+	position: absolute;
+
+}
+.after{
+	left: -165px;
+	position: absolute;
+	
+}
+@keyframes wheels{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+	</style>
+</head>
+<body>
+	<div class="picture">
+		<img src="Image/flag.png" alt="" class="flag">
+		<img src="Image/sun.png" alt="" class="suns">
+
+		<div class="container"> 
+			<div class="first"><h1>HAPPY</h1></div>
+			<div class="second"><h1>INDEPENDENCE</h1> </div>
+			<div class="third"><h1>DAY</h1></div>
+		</div>
+		<div class="road"></div>
+		<div class="city">
+			
+		</div>
+		<div class="car"><img src="Image/car.png" alt=""></div>
+		<div class="wheel">
+			<img src="Image/wheel.png" alt="" class="before">
+			<img src="Image/wheel.png" alt="" class="after">
+		</div>
+
+	</div>
+	
+</body>
+</html>

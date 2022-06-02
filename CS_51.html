@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./asses5.css"> -->
+    <style type="text/css">
+        
+        .content{
+    text-align: center;
+    background-color: yellow;
+    width: 100%;
+    min-height: 150vh;
+}
+.bold{
+    font-size: 50px;
+   
+}
+.main_content{
+    width: 50%;
+    margin-left: 25%;
+    
+}
+.one{
+    margin: 10% 0% 0% 10%;
+    width: 100px;
+    height: 100px;
+   border: 1px;
+    display: inline-block;
+}
+.ones{
+    background-color: gray;
+    animation: ones alternate-reverse 5s infinite 1s ease-in-out;
+}
+@keyframes ones {
+    30%{
+        transform: skewX(20deg);
+    }
+    60%{
+        transform: skewX(-20deg);
+    }
+}
+.twos{
+    background-color: white;
+    animation: twos infinite 5s alternate-reverse;
+}
+@keyframes twos{
+    0%{
+        transform: skewY(40deg);
+    }
+    100%{
+        transform: skewY(-40deg);
+    }
+}
+.threes{
+    background-color: green;
+    animation: threes 3s infinite 0s;
+}
+@keyframes threes{
+    0%{
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.fours{
+    background-color: rgb(135, 229, 135);
+    animation: alternate fours 4s infinite 0s ;
+}
+@keyframes fours{
+    0%{transform: rotateX(60deg);
+  }
+  100%{
+      transform: rotateX(-60deg);
+  }
+}
+.fourss{background-color: brown;
+    animation: fourss 4s infinite 0s alternate;
+
+}
+@keyframes fourss{
+    0%{
+        transform: rotateY(60deg);
+    }
+    100%{
+        transform: rotateY(-60deg);
+    }
+}
+.foursss{
+    background-color: fuchsia;
+    animation: foursss 2s alternate infinite 0s;
+}
+@keyframes foursss{
+    0%{
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: rotate(-90deg);
+    }
+}
+.page{
+    padding-top:50px;
+    font-size: 30px;
+}
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="bold">Try To Replicate This</div>
+         <div class="main">
+     <div class="main_content">1.
+         <div class="one ones"></div>
+         <div class="one ones"></div>
+         <div class="one ones"></div>
+     </div>
+     <div class="main_content">2.
+         <div class="one twos"></div>
+         <div class="one twos"></div>
+         <div class="one twos"></div>
+     </div>
+     <div class="main_content">3.
+         <div class="one threes"></div>
+         <div class="one threes"></div>
+         <div class="one threes"></div>
+     </div>
+     <div class="main_content">4.
+         <div class="one fours"></div>
+         <div class="one fourss"></div>
+         <div class="one foursss"></div>
+     </div>
+     </div>
+     <div class="page">
+         <a href="C:\Users\arohi\Desktop\Developer/CS_52.html">
+             Let's go and try another things
+         </a>
+     </div>
+     </div>
+</body>
+</html>

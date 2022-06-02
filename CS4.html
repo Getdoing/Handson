@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+      
+    .offer{
+   text-align: center;
+   height: auto ;
+   width: 90%;
+   
+   background-image: linear-gradient( to right, red,green,yellow);
+
+}
+.home{
+    background-color: aqua;
+    width: 70%;
+    height: 80px;
+    border-radius: 8px;
+   border: 2px solid red;
+   text-align: center;
+   margin-right: 100px;
+   margin-left: 100px;
+   
+   
+}
+.grd{
+   
+   display: flex;
+   justify-content: center;
+  background-color: aquamarine;
+   flex-flow: row wrap;
+   width: 90%;
+ 
+}
+.grid-itema{
+   height: 55px;
+   border: 2px solid;
+   width: 400px;
+   margin: 0 5px;
+   
+}
+.top{  text-align: center;
+   height: auto ;
+   width: 100%;
+   background-image: linear-gradient( 
+     to right,
+    red,
+   yellow,
+    red
+      );
+      text-decoration: underline;
+      width: 90%;
+}
+.all{
+   background-image: radial-gradient(
+      rgb(116, 116, 212),
+      rgb(109, 218, 147),
+      rgb(223, 173, 123)
+   );
+   text-decoration: underline;
+   flex-flow: row wrap;
+   justify-content: space-between;
+   margin: 10px;
+   display: flex;
+   padding: 150px;
+   width: 69%;
+   
+}
+.all-it{
+   height: 90px;
+   width: 200px;
+   border: 2px solid red;
+   border-radius: 5px;
+   background-color: yellow;
+   text-align: center;
+   
+   
+}
+
+.grid-container {
+   color: white;
+   text-align: center;
+   padding-top: 40px;
+   padding-bottom: 20px;
+   background-color: white;
+   display: grid;
+   grid-template-columns: 405px 405px 405px 100px;
+   grid-template-rows: 50px 80px 120px 40px;
+   gap: 10px 10px;
+
+   
+}
+.item1 {
+   background-color:red;
+   grid-column-start: 1;
+   grid-column-end: 5;
+   font-size: larger;
+   padding-top: 10px;
+   width: auto;
+   
+}
+.item2 {
+   background-color: darkgreen;
+   font-size: larger;
+   padding-top: 10px;
+}
+.item3 {
+   background-color: rgb(0, 119, 255);
+   text-align: left;
+   font-size: larger;
+}
+.item4 {
+   background-color: rgb(46, 46, 226);
+   text-align: left;
+   font-size: larger;
+}
+.item5 {
+   grid-column-start: 4;
+   grid-column-end: 5;
+   grid-row-start: 2;
+   grid-row-end: 4;
+   text-align: left;
+   background-color: rgb(41, 33, 33);
+   font-size: 15px;
+   text-decoration: underline;
+
+}
+.item6 {
+   
+   grid-column-start: 1;
+   grid-column-end: 4;
+   background-color: rgb(223, 166, 45);
+   text-align: left;
+   font-size: larger;
+}
+.item7 {
+      grid-column-start: 1;
+      grid-row-start: 4;
+      grid-row-end: 5;
+      grid-column-end: 5;
+      background-color: red;
+     font-size: larger;
+     padding-top: 10px;
+    
+}
+    </style>
+</head>
+<body>
+    <h2 class="offer"> <u> OUR OFFERINGs </u></h2>
+
+    <div class="home">
+        <ul><li>Home</li><li>Contact us</li><li>Revier us</li></ul>
+    </div> <br>
+    
+        <div class="grd">
+           <div class="grid-itema"> Lorem ipsum dolor sit amet consectetur adipisicing elit.Ilit.impedit nisi ipsam dolorem veritstis ea provident facere obcaecati necessitatibus essa!</div>
+            <div class="grid-itema"> Lorem ipsum dolor sit amet consectetur adipisicing elit.Ilit.impedit nisi ipsam dolorem veritstis ea provident facere obcaecati necessitatibus essa!</div>
+            <div class="grid-itema">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laborisam cupidilate modi earum cum adipisci ipsum at.Dolores,asperiores</div>
+            <div class="grid-itema"> Lorem ipsum dolor sit amet consectetur adipisicing elit.Ilit.impedit nisi ipsam dolorem veritstis ea provident facere obcaecati necessitatibus essa!</div>
+        </div>
+  
+<h3 class="top"> OUR TOP PERFORMER IN JEE ADVANCE.</h3>
+
+<div class="all">
+    <div class="all-it">AKASH GUPTA <br>213/300 <br> GOT IIT BOMBAY</div>
+    <DIV class="all-it">RISHAV <br>203/300 <br>GOT DELHI</DIV>
+    <div class="all-it">GAURAV RAJ <br>192/300 <br>GOT IIT ROORKEE</div>
+    <div class="all-it">Shivam chavan <br>176/300 <br>GOT IIT KANPUR</div>
+</div>
+
+<div class="grid-container">
+    <div class="grid-item item1">THE BEST PLACE FOR BEST CARRIER.</div>
+    <div class="grid-item item2">You can ask doubt <br> in our doubt session.</div>
+    <div class="grid-item item3">
+      Get 30% off by applying code while purchasing course.
+    </div>
+    <div class="grid-item item4">
+      We assure that your hard work &amp; our teaching will give bright result.
+    </div>
+    <div class="grid-item item5">
+      1.Study Material
+      <div class="underline"></div>
+      2.Tests
+      <div class="underline"></div>
+      3.Doubt Mentors
+      <div class="underline"></div>
+      4.Lectures
+      <div class="underline"></div>
+      5.Our Subcriptions
+      <div class="underline"></div>
+      7.Our Faculty
+      <div class="underline"></div>
+    </div>
+    <div class="grid-item item6">
+        lorem ipsum dolor sit amet consectetur adipisicing elit.Provident temporibus dolore velit, quits ducimus natus cipiditate  adi isci tenetur explicabo sint,aperiam quidem qui vitae optio reiciendis quasi soluta assumenda officiis consequutur.  Odit  blanditiis nisi temporibus debits culpa dicta?
+    </div>
+    <div class="grid-item item7">ALL THE BEST!</div>
+  </div>
+
+</body>
+</ht
